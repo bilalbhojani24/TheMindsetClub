@@ -24,8 +24,14 @@
     />
 
     <!--owl carousel-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    />
     <!-- <link
       rel="stylesheet"
       href="assets/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css"
@@ -334,21 +340,29 @@
               class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 contact order-1 order-sm-1 order-md-2"
             >
               <h2>Break the ice at bilalbhojani24@gmail.com</h2>
-              <form action="" class="form-group pt-4">
-                <input type="text" name="" id="" placeholder="Your name" />
-                <input type="email" placeholder="Your email" />
+              
+              <form action="" class="form-group pt-4" id="contactform">
+                <div class="alert">Thank you! Our team will get back to you</div>
+                <input
+                  type="text"
+                  name=""
+                  id="username"
+                  placeholder="Your name"
+                />
+                <input type="email" placeholder="Your email" id="useremail" />
                 <input
                   type="tel"
                   name=""
-                  id=""
+                  id="usermobile"
                   placeholder="Your mobile number"
                 />
                 <textarea
                   name=""
-                  id=""
+                  id="userquery"
                   row="50"
                   placeholder="Your Query..."
                 ></textarea>
+                <button type="submit">SUBMIT</button>
               </form>
             </div>
           </div>
@@ -356,6 +370,10 @@
       </footer>
     </div>
 
+    <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-app.js"></script>
+    <script src = "https://www.gstatic.com/firebasejs/7.14.2/firebase-database.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-analytics.js"></script>
     <!--Bootstrap script-->
     <script src="assets/Jquery/jquery-3.4.1.js"></script>
     <script src="assets/popper.min.js"></script>
@@ -383,5 +401,8 @@
         },
       });
     </script>
+
+   
+
   </body>
 </html>

@@ -85,7 +85,7 @@ nav i{
 }
 /*events*/
 .events{
-    padding:4rem 0;
+    padding:2rem 0;
 }
 .events h2{
     text-align: center;
@@ -213,6 +213,20 @@ footer .contact ::placeholder{
     color: white;
     opacity: 0.8;
 }
+footer .contact button{
+    color:white;
+    border:1px solid white;
+    background-color: transparent;
+    padding:5px;
+    width:150px;
+    margin-top: 0.6rem;
+}
+footer .contact .alert{
+    width:100%;
+    background-color: green;
+    color: white;
+    display: none;
+}
 @media only screen and (max-width: 600px) {
     nav #Navbar{
         margin-right:0px !important;
@@ -245,5 +259,31 @@ footer .contact ::placeholder{
         text-align: center;
         margin-left: 13%;
         font-size: 1.0rem;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    nav #Navbar{
+        margin-right:0px !important;
+    }
+    nav li{
+        width: 100%;
+        text-align: center;
+        border-bottom:0.7px solid rgb(191, 143, 0);
+    }
+    nav li:nth-child(5){
+        border:none;
+    }
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    nav #Navbar{
+        margin-right:0px !important;
+    }
+    nav li{
+        width: 100%;
+        text-align: center;
+        border-bottom:none;
     }
 }
